@@ -1,7 +1,7 @@
 import Image from "next/image"
 import {motion} from "framer-motion"
 export default function Project1(){
-    return<div className="flex relative w-full h-[60vh]  items-center" >
+    return<div className="flex relative w-full h-[60vh] mobile:h-[30vh] items-center" >
         <div className="w-[50%] relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
             <Image 
             className="w-full h-full object-fill mix-blend-multiply hover:mix-blend-normal bg-transparent"
