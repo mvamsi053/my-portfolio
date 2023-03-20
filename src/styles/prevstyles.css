@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+
+
+}
+
+body {
+
+    background-color: rgb(10, 25, 47);
+    margin: 0 3%;
+    color: #ccd6f6;
+}
+
+
+/* NAV BAR */
+.header {
+    position: fixed;
+    width: 100%;
+    background-color: rgba(10, 25, 47, 0.8);
+    padding-right: 3%;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar {
+    width: 100%;
+    z-index: 10;
+    background-color: rgba(10, 25, 47, 0.8);
+
+
+
+}
+
+.navbar-brand {
+    color: white;
+    margin-right: 50%;
+}
+
+li a {
+    color: white;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+li a:hover {
+    color: #64ffda;
+}
+
+.nav-item {
+    padding-right: 5%;
+}
+
+.menu-btn {
+
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    /* border: 2px solid white; */
+}
+
+.menu-btn__burger {
+    width: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    height: 5px;
+    border-radius: 5px;
+    background: white;
+    transition: all .5s ease-in-out;
+    transform: translateY();
+}
+
+
+.menu-btn__burger::before,
+.menu-btn__burger::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 5px;
+    background: white;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+.menu-btn__burger::before {
+    width: 40px;
+}
+
+.menu-btn__burger::before {
+    transform: translateY(-16px);
+
+}
+
+.menu-btn__burger::after {
+    transform: translateY(16px);
+
+}
+
+/* Animation */
+.menu-btn.open .menu-btn__burger {
+    transform: translateX(-50px);
+    background: transparent;
+}
+
+.menu-btn.open .menu-btn__burger::before {
+    transform: rotate(45deg) translate(35px, -35px);
+
+}
+
+.menu-btn.open .menu-btn__burger::after {
+    transform: rotate(-45deg) translate(35px, 35px);
+    width: 40px;
+}
+
+.resume-btn {
+    border: 2px solid rgb(100, 255, 218);
+    border-radius: 4px;
+
+    cursor: pointer;
+    font-size: 13px;
+    color: #64ffda;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.resume-btn:hover {
+    background-color: rgba(100, 255, 218, 0.1);
+    color: #64ffda;
+
+}
+
+/* NAV END */
+
+/* Empty div */
+.empty {
+    position: relative;
+    top: 0;
+    height: 12vh;
+    z-index: 0;
+}
+
+/* Main Section */
+.main {
+    margin: 0 10%;
+
+}
+
+.jumbotron {
+    background-color: #0a192f;
+}
+
+.greetings {
+    color: #64ffda;
+    font-weight: 400;
+    font-size: 87.5%;
+    font-family: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+}
+
+.my-name {
+    color: #ccd6f6;
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 400%;
+}
+
+.about-me {
+    font-family: 'Inter', sans-serif;
+    color: #8892b0;
+    font-size: 400%;
+}
+
+.lead {
+    font-size: 120%;
+    width: 50%;
+    color: #8892b0;
+}
+
+/* About Section */
