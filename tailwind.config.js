@@ -24,7 +24,7 @@ module.exports = {
 
       sm: { max: "639px" },
       // => @media (max-width: 639px) { ... }
-      mobile: { max: "428" },
+      mobile: { max: "428px" },
       // => @media (max-width: 428px) { ... }
     },
     extend: {
@@ -39,6 +39,7 @@ module.exports = {
       boxShadow: {
         one: "0 10px 30px -15px rgba(2,12,27,0.7)",
         two: "0 20px 30px -15px rgba(2,12,27,0.7)",
+        sidebar: "-10px 0px 30px -15px rgba(2,12,27,0.7)",
       },
     },
   },

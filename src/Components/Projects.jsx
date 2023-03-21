@@ -14,7 +14,7 @@ return<section className="min-h-[90vh] relative z-10  flex flex-col items-center
             <h1 className="heading2 font-semibold " >Some Things I{`'`}ve Built</h1>
             <div className="border-slate/50 w-[30%] ml-4 self-center border-b" ></div>
         </div>
-        <div className="w-full flex flex-col gap-y-10">
+        <div className="w-full flex flex-col gap-y-10 ">
             <Project1/>
             <Project2/>
             <Project3/>

@@ -63,6 +63,9 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: rgba(136, 146, 176, 0.8)
 }
+.flip_H {
+  transform: scale(-1, 1);
+}
 
 /* Media queries */
 
@@ -105,7 +108,7 @@ body {
     
   }
 }
-@media only screen and(max-width:40px) {
+@media only screen and (max-width:428px) {
     *,
       html {
         font-size: 10px;
