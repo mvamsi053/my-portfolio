@@ -1,8 +1,8 @@
 import Image from "next/image"
 import {motion} from "framer-motion"
 export default function Project1(){
-    return<div className="flex relative w-full h-[60vh] mobile:h-[30vh] items-center" >
-        <div className="w-[50%] relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
+    return<div className="flex relative w-full h-[60vh] mobile:h-[50vh] items-center" >
+        <div className="w-[50%] relative mobile:absolute mobile:w-full flex h-[80%]  items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
             <Image 
             className="w-full h-full object-fill mix-blend-multiply hover:mix-blend-normal bg-transparent"
             src="/assets/images/hrms.png" 
@@ -10,14 +10,14 @@ export default function Project1(){
             height={665}
              width={1357}  />
         </div>
-        <div className="flex  relative h-[75%] flex-col w-[50%] items-end justify-center " >
-            <div className="top-0 absolute text-right  ">
+        <div className="flex  relative h-[75%] mobile:bg-navy/80 mobile:rounded-md mobile:h-[80%] mobile:w-full flex-col w-[50%]  items-end justify-center " >
+            <div className="top-0 mobile:static absolute text-right mobile:pr-4 ">
                 <p className="text-primary1 para-sm" > Industry Project</p>
             <h1 className="heading2 font-semibold" >AptaHr (HRMS)</h1>
             </div>
             
-            <div className="bg-navy absolute w-[120%]  z-10">
-                <ul className="text-right p-6 text-slatelite rounded-xl shadow-two leading-[1.8rem]">
+            <div className="bg-navy absolute mobile:static w-[120%] mobile:w-full z-10">
+                <ul className="text-right p-6 mobile:pr-4 text-slatelite rounded-xl shadow-two leading-[1.8rem]">
                    <li className="para-nml"  >Its an all-in-one <span className="text-primary1">HR Management </span> application, </li>
                     <li className="para-nml" >Developed key functionalities which includes <span className="text-primary1">Meetings, Email</span>  etc, </li>
                     <li className="para-nml" >Led troubleshooting, fixed <span className="text-primary1">200+</span>  bugs and other issues,</li>
@@ -26,7 +26,7 @@ export default function Project1(){
                 </ul>
 
             </div>
-            <div className="absolute bottom-2 flex flex-col items-end gap-y-2">
+            <div className="absolute bottom-2 mobile:static mobile:pr-4 flex flex-col items-end gap-y-2 ">
             <ul className="flex text-slatelite  gap-x-4" >
                 <li  className="para-nml"  >React</li>
                 <li className="para-nml" >Tailwind Css</li>

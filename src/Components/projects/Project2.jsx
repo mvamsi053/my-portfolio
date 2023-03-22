@@ -1,8 +1,8 @@
 import Image from "next/image"
 import {motion} from "framer-motion"
 export default function Project2(){
-    return<div className="flex flex-row-reverse relative w-full h-[60vh]  items-center" >
-        <div className="w-[50%] relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
+    return<div className="flex flex-row-reverse relative w-full h-[60vh] mobile:h-[50vh] items-center" >
+        <div className="w-[50%] mobile:absolute mobile:w-full  relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
             <Image 
             className="w-full h-full object-fill mix-blend-multiply hover:mix-blend-normal bg-transparent"
             src="/assets/images/aptagrim.png" 
@@ -10,14 +10,14 @@ export default function Project2(){
             height={665}
              width={1357}  />
         </div>
-        <div className="flex  relative h-[75%] flex-col w-[50%] items-start justify-center " >
-            <div className="top-0 absolute text-left  ">
+        <div className="flex  relative h-[75%]  mobile:bg-navy/70 mobile:rounded-md mobile:h-[80%] mobile:w-full flex-col w-[50%] items-start justify-center " >
+            <div className="top-0 mobile:static absolute text-left mobile:pl-4  ">
                 <p className="text-primary1 para-sm" > Industry Project</p>
             <h1 className="heading2 font-semibold" >Aptagrim website</h1>
             </div>
             
-            <div className="bg-navy absolute w-[120%]  z-10">
-                <ul className="text-left p-6 text-slatelite rounded-xl  shadow-two leading-[1.8rem]">
+            <div className="bg-navy mobile:static absolute w-[120%] mobile:w-full z-10">
+                <ul className="text-left p-6 mobile:pl-4 text-slatelite rounded-xl  shadow-two leading-[1.8rem]">
                     
                     
 
@@ -29,7 +29,7 @@ export default function Project2(){
                 </ul>
 
             </div>
-            <div className="absolute bottom-2 flex flex-col items-start gap-y-2">
+            <div className="absolute mobile:static mobile:pl-4 bottom-2 flex flex-col items-start gap-y-2">
             <ul className="flex text-slatelite  gap-x-4" >
                 
                 <li  className="para-nml"  >Next.js</li>

@@ -5,15 +5,15 @@ import PrimaryButton from "./Common/PrimaryButton"
 export default function Header() {
   return <nav className="w-full flex justify-between z-50 items-center h-[10vh] mobile:h-[6vh]  fixed top-0 bg-bg/80  " >
      
-     <div className="w-[20%] text-center " >
+     <div className="w-[20%]   flex justify-start " >
         {/* <h1 className="font-semibold text-3xl text-primary2 " >Vamsi Madugundu</h1> */}
-        <Image className="w-[5rem] mobile:w-[10rem]  h-auto object-contain" src="/assets/images/logo.png" alt="logo" width={100} height={100}/>
+        <Image className="w-[5rem] mobile:-translate-x-2  h-full object-contain" src="/assets/images/logo.png" alt="logo" width={120} height={120}/>
      </div>
      
      <BurgerMenu/>
    
      
-            <ul className="flex w-[60%] justify-center gap-x-10 mobile:hidden ">
+            <ul className="flex w-[60%] justify-center gap-x-10 mobile:hidden">
                 <li className="flex items-center justify-center"  >
                     <Link className="" href="#about"><span className="text-primary1 text-sm" >01.</span> About</Link>
                 </li>
@@ -28,7 +28,7 @@ export default function Header() {
                 </li>
                 <li className="flex items-center justify-center  ">
                     <PrimaryButton>
-                        <button className="text-sm">Resume</button>
+                        <a href="/assets/files/Vamsi Madugundu.pdf" download className="text-sm">Resume</a>
                     </PrimaryButton>
                 
                 </li>

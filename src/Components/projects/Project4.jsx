@@ -1,8 +1,8 @@
 import Image from "next/image"
 import {motion} from "framer-motion"
 export default function Project4(){
-    return<div className="flex flex-row-reverse relative w-full h-[60vh]  items-center" >
-        <div className="w-[50%] relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
+    return<div className="flex flex-row-reverse relative w-full h-[60vh] mobile:h-[50vh]  items-center" >
+        <div className="w-[50%] mobile:absolute mobile:w-full  relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
             <Image 
             className="w-full h-full object-fill mix-blend-multiply hover:mix-blend-normal bg-transparent"
             src="/assets/images/nbp.png" 
@@ -10,14 +10,14 @@ export default function Project4(){
             height={665}
              width={1357}  />
         </div>
-        <div className="flex  relative h-[75%] flex-col w-[50%] items-start justify-center " >
-            <div className="top-0 absolute text-left  ">
+        <div className="flex  relative h-[75%] mobile:bg-navy/70 mobile:rounded-md mobile:h-[80%] mobile:w-full flex-col w-[50%] items-start justify-center " >
+            <div className="top-0 absolute text-left  mobile:static mobile:pl-4 ">
                 <p className="text-primary1 para-sm" > Personal Project</p>
             <h1 className="heading2 font-semibold" >Online Recipe Book</h1>
             </div>
             
-            <div className="bg-navy absolute w-[120%]  z-10">
-                <ul className="text-left p-6 text-slatelite rounded-xl  shadow-two leading-[1.8rem]">
+            <div className="bg-navy absolute    w-[120%] mobile:static mobile:w-full z-10">
+                <ul className="text-left p-6 mobile:pl-4 text-slatelite rounded-xl  shadow-two leading-[1.8rem]">
                     <li className="para-nml"  >A web Application build with MERN Stack Technology and created own <span className="text-primary1" >REST API</span> , </li>
                     <li className="para-nml" >User can login with <span className="text-primary1" >Google</span> account and can perform <span className="text-primary1" >CRUD</span>  operations ,</li>
                     <li className="para-nml" > Designed pages using <span className="text-primary1" >Canva</span>.</li>
@@ -26,7 +26,7 @@ export default function Project4(){
                 </ul>
 
             </div>
-            <div className="absolute bottom-1 flex flex-col items-start gap-y-2">
+            <div className="absolute mobile:static mobile:pl-4 bottom-1 flex flex-col items-start gap-y-2">
             <ul className="flex text-slatelite  gap-x-4" >
                 <li  className="para-nml"  >React</li>
                 <li className="para-nml" >Node.js</li>

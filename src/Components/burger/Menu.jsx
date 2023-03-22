@@ -70,7 +70,7 @@ export default function Menu({ toggle, isOpen }) {
 
   return (
     <motion.ul
-      className={`w-[100vw] h-[100%] flex flex-col items-center pr-6  z-50 right-0 bg-navy shadow-sidebar absolute justify-evenly ${
+      className={`w-[100vw] h-[100%] flex flex-col items-center  z-50 right-0 bg-navy shadow-sidebar absolute justify-evenly ${
         isOpen ? '' : 'hidden'
       }  `}
       variants={menuvariants}
@@ -92,15 +92,17 @@ export default function Menu({ toggle, isOpen }) {
                 path === menu.link ? 'text-primary1' : 'text-gray3'
               } w-full flex-1 heading2 font-semibold flex flex-col items-center justify-center`}
             >
-              <span className='text-primary1' >{menu.id}</span>
+              <span className='text-primary1 para-lg ' >{menu.id}</span>
              <p className='heading2 font-light' >{menu.name}</p> 
             </Link>
           </motion.li>
         );
       })}
-       <motion.li className="flex w-full  items-center justify-center  ">
+       <motion.li variants={variants}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }} className="flex w-full  items-center justify-center  ">
                     <PrimaryButton>
-                        <button className="para-lg">Resume</button>
+                        <a href="/assets/files/Vamsi Madugundu.pdf" download className="text-3xl">Resume</a>
                     </PrimaryButton>
                 
                 </motion.li>

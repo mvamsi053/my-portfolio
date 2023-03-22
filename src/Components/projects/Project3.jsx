@@ -1,8 +1,8 @@
 import Image from "next/image"
 import {motion} from "framer-motion"
 export default function Project3(){
-    return<div className="flex relative w-full h-[60vh]  items-center" >
-        <div className="w-[50%] relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
+    return<div className="flex relative w-full h-[60vh] mobile:h-[50vh]  items-center" >
+        <div className="w-[50%] mobile:absolute mobile:w-full relative flex h-[80%] items-center overflow-hidden rounded-md bg-primary1 blur-[0.5px] hover:blur-0 hover:bg-none shadow-one" >
             <Image 
             className="w-full h-full object-fill mix-blend-multiply hover:mix-blend-normal bg-transparent"
             src="/assets/images/vsee.png" 
@@ -10,14 +10,14 @@ export default function Project3(){
             height={665}
              width={1357}  />
         </div>
-        <div className="flex  relative h-[75%] flex-col w-[50%] items-end justify-center " >
-            <div className="top-0 absolute text-right  ">
+        <div className="flex  relative h-[75%] flex-col w-[50%] mobile:bg-navy/80 mobile:rounded-md mobile:h-[80%]  mobile:w-full items-end justify-center " >
+            <div className="top-0 mobile:static mobile:pr-4 absolute  text-right  ">
                 <p className="text-primary1 para-sm" > Personal Project</p>
             <h1 className="heading2 font-semibold" >Social Media Application</h1>
             </div>
             
-            <div className="bg-navy absolute w-[120%]  z-10">
-                <ul className="text-right p-6 text-slatelite rounded-xl w-full h-full shadow-two leading-[1.8rem]">
+            <div className="bg-navy mobile:static absolute w-[120%] mobile:w-full z-10">
+                <ul className="text-right p-6 mobile:pr-4 text-slatelite rounded-xl w-full h-full shadow-two leading-[1.8rem]">
                     <li className="para-nml"  >Complete <span className="text-primary1">MERN</span> Stack  application with Authentication and Autharization  ,</li>
                     <li className="para-nml" >Integrated <span className="text-primary1" >MapTiler</span>  api for maps and <span className="text-primary1" >multer</span> for file upload,</li>
 
@@ -27,7 +27,7 @@ export default function Project3(){
                 </ul>
 
             </div>
-            <div className="absolute bottom-2 flex flex-col items-end gap-y-2">
+            <div className="absolute mobile:static mobile:pr-4 bottom-2  flex flex-col items-end gap-y-2">
             <ul className="flex text-slatelite  gap-x-4" >
                 <li  className="para-nml"  >React</li>
                 <li className="para-nml" >Node.js</li>
