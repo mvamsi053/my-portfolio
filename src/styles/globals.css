@@ -5,13 +5,17 @@
   margin: 0;
   padding: 0;
   font-size: 16px;
+  scroll-behavior: smooth !important;
+ 
 
 }
+
 body {
 
   background-color: rgb(10, 25, 47);
 
   color: #ccd6f6;
+ 
 }
 .heading1{
   font-size:5rem ;

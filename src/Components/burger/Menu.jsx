@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 import PrimaryButton from '../Common/PrimaryButton';
 
 export default function Menu({ toggle, isOpen }) {
@@ -28,6 +29,22 @@ export default function Menu({ toggle, isOpen }) {
       opacity: 0,
       transition: {
         y: { stiffness: 1000 },
+      },
+    },
+  };
+  const variants2 = {
+    open: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        x: { type: 'spring' },
+      },
+    },
+    closed: {
+      x: 100,
+      opacity: 0,
+      transition: {
+        x: { type: 'spring' },
       },
     },
   };
@@ -75,6 +92,15 @@ export default function Menu({ toggle, isOpen }) {
       }  `}
       variants={menuvariants}
     >
+      <motion.li variants={variants2}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.95 }} className="flex w-full  items-center justify-center  ">
+              <a href="#" onClick={toggle} className="w-[30%] -translate-y-5">
+               <Image className="w-[8rem] -translate-y-3 h-auto object-contain" src="/assets/images/logo.png" alt="logo" width={120} height={120}/>
+              </a>
+                   
+                
+                </motion.li>
      
       {menus.map((menu) => {
         return (
@@ -101,9 +127,12 @@ export default function Menu({ toggle, isOpen }) {
        <motion.li variants={variants}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.95 }} className="flex w-full  items-center justify-center  ">
-                    <PrimaryButton>
-                        <a href="/assets/files/Vamsi Madugundu.pdf" download className="text-3xl">Resume</a>
+              <a href="/assets/files/Vamsi Madugundu.pdf" download>
+               <PrimaryButton>
+                        <p  className="text-3xl">Resume</p>
                     </PrimaryButton>
+              </a>
+                   
                 
                 </motion.li>
     </motion.ul>
